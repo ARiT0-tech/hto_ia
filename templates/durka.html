@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Миссия Колонизация Марса</h1>
+<h4>И на Марсе будут яблони цвести!</h4>
+{% if "инженер" in prof or in "строитель" prof %}
+<div>Инженерные тренажеры</div>
+<img src="/static/img/star.png" alt="!!!ТУТ ФОТО!!!"/>
+{% elif "доктор" in {{prof}} %}
+<div>ДУрка</div>
+<img src="/static/img/durka.jpg" alt="!!!ТУТ ФОТО!!!"/>
+{% elif "ученый" in {{prof}} %}
+<div>Научные симуляторы</div>
+<img src="/static/img/durka.jpg" alt="!!!ТУТ ФОТО!!!"/>
+{% else %}
+<div>Ты хто?</div>
+<img src="/static/img/tiktok.jpg" alt="!!!ТУТ ФОТО!!!"/>
+</body>
+</html>
